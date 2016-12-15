@@ -62,8 +62,9 @@ var SagaIntegrationTester = function () {
             initialState = _ref$initialState === undefined ? {} : _ref$initialState,
             reducers = _ref.reducers,
             _ref$middlewares = _ref.middlewares,
-            middlewares = _ref$middlewares === undefined ? [] : _ref$middlewares;
-        var combineReducers = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _redux.combineReducers;
+            middlewares = _ref$middlewares === undefined ? [] : _ref$middlewares,
+            _ref$combineReducers = _ref.combineReducers,
+            combineReducers = _ref$combineReducers === undefined ? _redux.combineReducers : _ref$combineReducers;
         (0, _classCallCheck3.default)(this, SagaIntegrationTester);
 
         this.actionsCalled = [];
